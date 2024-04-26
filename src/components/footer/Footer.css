@@ -1,0 +1,20 @@
+.footer_contents {
+  display: flex;
+  padding: 100px;
+  gap: 45px;
+}
+.footer_contents ul {
+  list-style-type: none;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.footer_contents .p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #7a7a7a;
+}
+.par1 {
+  width: 380px;
+}
