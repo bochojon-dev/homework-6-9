@@ -1,6 +1,7 @@
 .icon_items {
   display: flex;
   gap: 1px;
+  margin-bottom: 114px;
 }
 .icon_item {
   display: flex;

@@ -33,7 +33,7 @@ const Footer = () => {
             <li>
               <div className="footer_contact">
                 <img src={navigation} alt="contact" />
-                <p className="p">
+                <p className="p par2">
                   51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783,
                   USA.
                 </p>
@@ -48,7 +48,7 @@ const Footer = () => {
             <li>
               <div className="footer_contact">
                 <img src={phone} alt="contact" />
-                <p className="p">example@email.com</p>
+                <p className="p">+91 123 4567890</p>
               </div>
             </li>
           </ul>
@@ -136,6 +136,11 @@ const Footer = () => {
               </div>
             </li>
           </ul>
+        </div>
+        <div className="end">
+          <h4>
+            © 2024 <span>FoodTrove</span>, All rights reserved.
+          </h4>
         </div>
       </div>
     </div>
