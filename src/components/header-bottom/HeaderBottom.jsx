@@ -6,8 +6,10 @@ import user from "../../assets/images/user.svg";
 import heart from "../../assets/images/heart.svg";
 import cart from "../../assets/images/cart.svg";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HeaderBottom = () => {
+  let navigate = useNavigate();
   const icons = [
     {
       id: 1,
@@ -50,9 +52,18 @@ const HeaderBottom = () => {
             <form>
               <input type="text" placeholder="Search for items..." />
               <select name="search">
-                <option value="All categories">All categories</option>
-                <option value="Vegetables">Vegetables</option>
-                <option value="Clothes">Clothes</option>
+                <option
+                  onClick={() => navigate("/about")}
+                  value="All categories"
+                >
+                  <NavLink to={"/about"}>All categories</NavLink>
+                </option>
+                <option onClick={() => navigate("/admin")} value="Vegetables">
+                  <NavLink to={"/admin"}>Admin</NavLink>
+                </option>
+                <option onClick={() => navigate("/login")} value="Clothes">
+                  <NavLink to={"/login"}>Login</NavLink>
+                </option>
               </select>
               <span>
                 <img src={search} alt="search" />
