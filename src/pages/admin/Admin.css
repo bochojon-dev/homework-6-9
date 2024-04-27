@@ -1,0 +1,21 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 25px 0;
+}
+.admin .container {
+  background-color: #f53e32;
+}
+.title h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.title h5 {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

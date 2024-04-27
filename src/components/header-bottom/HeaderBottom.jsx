@@ -5,6 +5,7 @@ import search from "../../assets/images/search.svg";
 import user from "../../assets/images/user.svg";
 import heart from "../../assets/images/heart.svg";
 import cart from "../../assets/images/cart.svg";
+import { NavLink } from "react-router-dom";
 
 const HeaderBottom = () => {
   const icons = [
@@ -12,22 +13,27 @@ const HeaderBottom = () => {
       id: 1,
       image: user,
       title: "Account",
+      link: "/login",
     },
     {
       id: 2,
       image: heart,
       title: "Wishlist",
+      link: "/admin",
     },
     {
       id: 3,
       image: cart,
       title: "Cart",
+      link: "#",
     },
   ];
   let icon = icons.map((e) => (
     <li key={e.id}>
-      <img src={e.image} alt="icon" />
-      <p>{e.title}</p>
+      <NavLink to={e.link}>
+        <img src={e.image} alt="icon" />
+        <p>{e.title}</p>
+      </NavLink>
     </li>
   ));
 
@@ -36,9 +42,9 @@ const HeaderBottom = () => {
       <div className="container">
         <div className="bottom_contents">
           <div className="logo">
-            <a href="#">
+            <NavLink to={"/about"}>
               <img src={logo} alt="logo" />
-            </a>
+            </NavLink>
           </div>
           <div className="inputs">
             <form>

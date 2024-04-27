@@ -47,6 +47,13 @@
 .icons ul {
   gap: 36px !important ;
 }
+.icons a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+  text-decoration: none;
+}
 .icons li:first-child img {
   display: flex !important;
 }
