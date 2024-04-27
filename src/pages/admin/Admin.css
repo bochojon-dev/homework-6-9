@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
   color: #fff;
-  padding: 25px 0;
+  padding: 25px 8px;
 }
-.admin .container {
+.admin .title {
   background-color: #f53e32;
 }
 .title h2 {
@@ -18,4 +18,75 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+.hero_texts p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #7a7a7a;
+}
+.hero_texts {
+  width: 625px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero_texts h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #212529;
+}
+.customers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #e9e9e9;
+  padding: 25px;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+}
+.custom h4 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #f53e32;
+}
+.custom p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+.custom span {
+  font-size: 30px;
+  color: #7a7a7a;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+.admin_icon {
+  border: 1px solid #e9e9e9;
+  background: #f7f7f8;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  padding: 80px 50px 30px 50px;
+  border-radius: 5px;
+}
+.admin_icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 100px;
+}
+.admin_icon h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.admin_icon p {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
 }
